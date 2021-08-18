@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 18.75px;
+}
+
+.header {
+    background-color: #635854;
+    padding: 12px 0;
+    border-bottom: 4px solid #3596F5;
+}
+
+.navbar {
+    margin: 0 auto;
+    max-width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.navbar-item {
+    margin: 0 40px;
+    text-align: center;
+}
+
+.navbar-link {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-contacts {
+    text-align: right;
+}
+
+.navbar-text {
+    display: block;
+    margin-bottom: 4px;
+    color: white;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.navbar-phone {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+}
