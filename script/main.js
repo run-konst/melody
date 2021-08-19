@@ -5,13 +5,13 @@ $(document).ready(function () {
         counterUp = $('.arrow-up'),
         counterDown = $('.arrow-down'),
         selectFloor = () => {
-            const usCurrentFloor = currentFloor.toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping: false })
+            const usCurrentFloor = currentFloor.toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping: false });
             $('.counter').text(usCurrentFloor);
             floorPath.removeClass('current-floor');
             $(`[data-floor=${currentFloor}]`).toggleClass('current-floor');
         };
     floorPath.on('mouseover', function() {
-        currentFloor = $(this).attr('data-floor');
+        currentFloor = +$(this).attr('data-floor');
         selectFloor();
     });
     counterUp.on('click', () => {
